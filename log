@@ -111,3 +111,18 @@ arraylist.c:25:34: error: expected ‘;’ before ‘realloc’
       |                                  ;
 Compilation failed
 3924147
+Thu 30 Mar 2023 09:49:42 PM UTC: 
+ arraylist.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:17: error: assignment to ‘void **’ from incompatible pointer type ‘ArrayList **’ {aka ‘struct ArrayList **’} [-Werror=incompatible-pointer-types]
+   25 |         l->data = (ArrayList **) realloc(l->data,l->capacity);
+      |                 ^
+arraylist.c: In function ‘push’:
+arraylist.c:38:17: error: assignment to ‘void **’ from incompatible pointer type ‘ArrayList **’ {aka ‘struct ArrayList **’} [-Werror=incompatible-pointer-types]
+   38 |         l->data = (ArrayList **) realloc(l->data,l->capacity);
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+1b9e12c
