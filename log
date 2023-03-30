@@ -36,3 +36,14 @@ Thu 30 Mar 2023 09:31:53 PM UTC:
  tests:  0|6
 total_score: 0/70
 7226718
+Thu 30 Mar 2023 09:32:26 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:18:48: error: ‘capacity’ undeclared (first use in this function)
+   18 |     nuevo->data = (void *) malloc(sizeof(void)*capacity);
+      |                                                ^~~~~~~~
+arraylist.c:18:48: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1527b64
