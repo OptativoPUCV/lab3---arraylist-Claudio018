@@ -14,7 +14,7 @@ ArrayList *createList(void) {
     ArrayList* nuevo = (ArrayList *) malloc(sizeof(ArrayList));
     nuevo->data = NULL;
     nuevo->capacity = 0;
-    nuevo->size = 0;
+    nuevo->size = -1;
     return nuevo;
 }
 
