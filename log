@@ -47,3 +47,9 @@ arraylist.c:18:48: error: ‘capacity’ undeclared (first use in this function)
 arraylist.c:18:48: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1527b64
+Thu 30 Mar 2023 09:32:41 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+17ef1dd
