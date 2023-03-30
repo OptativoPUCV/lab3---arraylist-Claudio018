@@ -67,7 +67,6 @@ void* pop(ArrayList * l, int i){
         }
         return data;
     }
-    return NULL;
 }
 
 void* get(ArrayList * l, int i){
