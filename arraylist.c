@@ -20,7 +20,16 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
-
+    if(size == capacity){
+        l->capacity *= 2;
+        l->data = realloc(l->data,l->capacity);
+        l->data[l->size] = data;
+        (l->size)++;
+    }
+    else{
+        l->data[l->size] = data;
+        (l->size)++;
+    }
 }
 
 void push(ArrayList * l, void * data, int i){
