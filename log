@@ -92,3 +92,22 @@ Thu 30 Mar 2023 09:40:54 PM UTC:
  tests:  3|4
 total_score: 20/70
 2f4eafc
+Thu 30 Mar 2023 09:41:31 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:20: error: ‘Array’ undeclared (first use in this function)
+   25 |         l->data = (Array List **) realloc(l->data,l->capacity);
+      |                    ^~~~~
+arraylist.c:25:20: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:25:25: error: expected ‘)’ before ‘List’
+   25 |         l->data = (Array List **) realloc(l->data,l->capacity);
+      |                   ~     ^~~~~
+      |                         )
+arraylist.c:25:34: error: expected ‘;’ before ‘realloc’
+   25 |         l->data = (Array List **) realloc(l->data,l->capacity);
+      |                                  ^~~~~~~~
+      |                                  ;
+Compilation failed
+3924147
